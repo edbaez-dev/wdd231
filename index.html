@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eduardo Baez's course home page for the WDD231 course, featuring his Web and Computer Programming certificate progress.">
+    <meta name="author" content="Eduardo Baez">
+    <title>Eduardo Baez | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site logo" id="logo">
+        <span id="site-name">Eduardo Baez</span>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="final/index.html">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-row">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Hi, I'm Eduardo Baez. I'm 32 years old and I live in Paraguay, in the heart of South America. I'm
+                    currently studying Software Development. I really enjoy listening to music, singing, and spending
+                    time
+                    with my family and friends. I'm excited to keep learning more every day.</p>
+            </section>
+
+            <section class="student-photo">
+                <h2>Profile Photo</h2>
+                <img src="images/profile.jpg" alt="Photo of Eduardo Baez" width="300" height="300">
+            </section>
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button data-filter="all">All Courses</button>
+                <button data-filter="WDD">WDD Courses</button>
+                <button data-filter="CSE">CSE Courses</button>
+            </div>
+            <div id="course-cards"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="social-links">
+            <li>
+                <a href="https://github.com/edbaez-dev" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11A11.5 11.5 0 0 0 12 .5Z" />
+                    </svg>
+                    <span class="visually-hidden">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/eduardo-ariel-báez-román-132838bb" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5v-9h3ZM6.5 8.7A1.7 1.7 0 1 1 8.2 7a1.7 1.7 0 0 1-1.7 1.7ZM19 19h-3v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V19h-3v-9h2.9v1.3h.1a3.1 3.1 0 0 1 2.8-1.6c3 0 3.6 2 3.6 4.6Z" />
+                    </svg>
+                    <span class="visually-hidden">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+        <p>&copy; <span id="currentyear"></span> Eduardo Baez | Paraguay</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+:root {
+    --color-bg: #1a1a1a;
+    --color-surface: #262626;
+    --color-text: #f2f2f2;
+    --color-muted: #b3b3b3;
+    --color-accent: #3b82f6;
+    --color-accent-dark: #2563eb;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-surface);
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+#site-name {
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: 0.5rem;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    width: 100%;
+}
+
+nav.open {
+    display: block;
+    flex-basis: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li {
+    padding: 0.5rem 0;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+    color: var(--color-accent);
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--color-accent);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about-me p {
+    background-color: var(--color-surface);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.student-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid var(--color-accent);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: var(--color-accent);
+}
+
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course-card {
+    background-color: var(--color-surface);
+    border-left: 4px solid var(--color-muted);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.course-card.completed {
+    border-left: 4px solid var(--color-accent);
+}
+
+#total-credits {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--color-surface);
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.social-links a {
+    color: var(--color-text);
+}
+
+.social-links a:hover {
+    color: var(--color-accent);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}

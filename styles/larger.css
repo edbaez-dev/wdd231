@@ -1,0 +1,54 @@
+@media (min-width: 640px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    .top-row {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .about-me {
+        flex: 2;
+    }
+
+    .student-photo {
+        flex: 1;
+    }
+
+    .student-photo img {
+        max-width: 100%;
+    }
+
+    #course-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    #course-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
