@@ -1,0 +1,84 @@
+{
+    "companies": [
+        {
+            "name": "Panificadora San Lorenzo",
+            "address": "Av. Mariscal López 850, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-112",
+            "website": "https://panificadorasanlorenzo.com.py",
+            "image": "bakery.jpg",
+            "membershipLevel": 3,
+            "category": "Bakery",
+            "founded": 1998
+        },
+        {
+            "name": "Ferretería Central",
+            "address": "Calle Cerro Corá 430, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-225",
+            "website": "https://ferreteriacentral.com.py",
+            "image": "ferreteria.jpg",
+            "membershipLevel": 2,
+            "category": "Hardware Store",
+            "founded": 2005
+        },
+        {
+            "name": "Clínica San Roque",
+            "address": "Ruta 1, Km 14, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-338",
+            "website": "https://clinicasanroque.com.py",
+            "image": "clinica.jpg",
+            "membershipLevel": 3,
+            "category": "Healthcare",
+            "founded": 2010
+        },
+        {
+            "name": "Librería Universitaria",
+            "address": "10 de Agosto casi Saturio Ríos, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-441",
+            "website": "https://libreriauniversitaria.com.py",
+            "image": "bookstore.jpg",
+            "membershipLevel": 1,
+            "category": "Bookstore",
+            "founded": 2012
+        },
+        {
+            "name": "Restaurante La Terraza",
+            "address": "Calle Independencia 675, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-559",
+            "website": "https://laterrazasanlorenzo.com.py",
+            "image": "restaurante.jpg",
+            "membershipLevel": 2,
+            "category": "Restaurant",
+            "founded": 2015
+        },
+        {
+            "name": "Taller Mecánico Rodríguez",
+            "address": "Ruta 2, Km 12, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-667",
+            "website": "https://tallerrodriguez.com.py",
+            "image": "taller.jpg",
+            "membershipLevel": 1,
+            "category": "Auto Repair",
+            "founded": 2008
+        },
+        {
+            "name": "Boutique Elegance",
+            "address": "Av. Mariscal López 1450, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-778",
+            "website": "https://boutiqueelegance.com.py",
+            "image": "boutique.jpg",
+            "membershipLevel": 2,
+            "category": "Clothing Store",
+            "founded": 2018
+        },
+        {
+            "name": "Academia de Idiomas Global",
+            "address": "Calle Coronel Bogado 210, San Lorenzo, Paraguay",
+            "phone": "+595 21 570-889",
+            "website": "https://academiaglobal.com.py",
+            "image": "academia.jpg",
+            "membershipLevel": 3,
+            "category": "Language School",
+            "founded": 2020
+        }
+    ]
+}

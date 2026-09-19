@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
