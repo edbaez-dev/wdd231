@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chamber Directory | San Lorenzo Chamber of Commerce</title>
-    <meta name="description" content="Directory of member businesses of the San Lorenzo Chamber of Commerce.">
+    <title>Home | San Lorenzo Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the San Lorenzo Chamber of Commerce — connecting local businesses and the community.">
     <meta name="author" content="Eduardo Baez">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Chamber Directory | San Lorenzo Chamber of Commerce">
-    <meta property="og:description" content="Directory of member businesses of the San Lorenzo Chamber of Commerce.">
+    <meta property="og:title" content="Home | San Lorenzo Chamber of Commerce">
+    <meta property="og:description"
+        content="Welcome to the San Lorenzo Chamber of Commerce — connecting local businesses and the community..">
     <meta property="og:image" content="https://edbaez-dev.github.io/wdd231/chamber/images/og-image.jpg">
-    <meta property="og:url" content="https://edbaez-dev.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://edbaez-dev.github.io/wdd231/chamber/index.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,22 +42,43 @@
         <nav id="primary-nav">
             <ul>
                 <li><a href="../index.html">Home Page</a></li>
-                <li><a href="home.html">Chamber Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="index.html" class="active">Chamber Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Member Directory</h1>
-
-        <div class="view-toggle">
-            <button id="grid-btn" aria-label="Display as grid">Grid</button>
-            <button id="list-btn" aria-label="Display as list">List</button>
-        </div>
-
-        <section id="member-list" class="grid-view">
+        <section class="hero">
+            <h1>San Lorenzo Chamber of Commerce</h1>
+            <img src="images/hero.jpg" alt="View of San Lorenzo, Paraguay" class="hero-image" width="1600" height="900">
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <article class="event">
+                <h3>Chamber Networking Breakfast</h3>
+                <p>October 15, 2026 — 8:00 AM</p>
+                <p>Join fellow members for coffee and networking at the community center.</p>
+            </article>
+            <article class="event">
+                <h3>Small Business Workshop</h3>
+                <p>October 22, 2026 — 6:00 PM</p>
+                <p>Learn digital marketing strategies for local businesses.</p>
+            </article>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-current">
+                <p class="temp" id="current-temp"></p>
+                <p id="current-description"></p>
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
+        </section>
+        <section class="spotlight">
+            <h2>Company Spotlight</h2>
+            <div class="spotlight-cards" id="spotlight-cards"></div>
         </section>
     </main>
 
