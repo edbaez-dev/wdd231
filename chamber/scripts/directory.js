@@ -173,3 +173,39 @@ const spotlightSection = document.querySelector('#spotlight-cards');
 if (spotlightSection) {
     getSpotlights();
 }
+
+// Membership level modals
+const modalTriggers = document.querySelectorAll('.modal-trigger');
+modalTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (event) => {
+        event.preventDefault();
+        const modalId = trigger.getAttribute('data-modal');
+        document.querySelector(`#${modalId}`).showModal();
+    });
+});
+
+const modalCloseButtons = document.querySelectorAll('.modal-close');
+modalCloseButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        button.closest('dialog').close();
+    });
+});
+
+// Hidden timestamp field
+const timestampField = document.querySelector('#timestamp');
+if (timestampField) {
+    timestampField.value = new Date().toISOString();
+}
+
+// Thank you page - display submitted form data from URL parameters
+const displayFirstName = document.querySelector('#display-first-name');
+if (displayFirstName) {
+    const params = new URLSearchParams(window.location.search);
+
+    displayFirstName.textContent = params.get('firstName');
+    document.querySelector('#display-last-name').textContent = params.get('lastName');
+    document.querySelector('#display-email').textContent = params.get('email');
+    document.querySelector('#display-mobile-phone').textContent = params.get('mobilePhone');
+    document.querySelector('#display-business-name').textContent = params.get('businessName');
+    document.querySelector('#display-timestamp').textContent = params.get('timestamp');
+}

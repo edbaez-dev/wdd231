@@ -41,4 +41,16 @@
     .spotlight-card {
         flex: 1;
     }
+
+    .join-form,
+    .membership-levels {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+        box-sizing: border-box;
+    }
+
+    .join-form {
+        padding-right: 1rem;
+    }
 }

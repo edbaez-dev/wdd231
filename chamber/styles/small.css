@@ -357,6 +357,149 @@ h1 {
     font-weight: 600;
 }
 
+/* JOIN FORM */
+.join-form {
+    padding: 1.5rem 1rem;
+}
+
+.join-form h1 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.join-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 0.25rem;
+}
+
+.join-form label:has(input[type="radio"]) {
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    color: var(--color-text-dark);
+}
+
+.join-form input,
+.join-form textarea {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.join-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.join-form button[type="submit"] {
+    background-color: var(--color-link);
+    color: var(--color-text);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* MEMBERSHIP LEVEL CARDS */
+.membership-levels {
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+.membership-levels h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.level-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.level-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-primary);
+}
+
+.level-card a {
+    color: var(--color-link);
+    font-weight: 600;
+}
+
+/* MEMBERSHIP CARD ANIMATION */
+.level-card {
+    opacity: 0;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.level-card:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.level-card:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+.level-card:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.level-card:nth-of-type(4) {
+    animation-delay: 1.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MODALS */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 320px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+dialog button.modal-close {
+    background-color: var(--color-link);
+    color: var(--color-text);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--color-primary);

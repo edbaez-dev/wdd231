@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | San Lorenzo Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the San Lorenzo Chamber of Commerce.">
+    <meta name="author" content="Eduardo Baez">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join | San Lorenzo Chamber of Commerce">
+    <meta property="og:description" content="Apply for membership with the San Lorenzo Chamber of Commerce.">
+    <meta property="og:image" content="https://edbaez-dev.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://edbaez-dev.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="San Lorenzo Chamber of Commerce logo" class="logo">
+            <span class="site-name">San Lorenzo Chamber of Commerce</span>
+        </div>
+        <button id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="../index.html">Home Page</a></li>
+                <li><a href="index.html">Chamber Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-form">
+            <h1>Join the Chamber</h1>
+            <form action="thankyou.html" method="get">
+
+                <label for="first-name">First Name
+                    <input type="text" id="first-name" name="firstName" title="Please enter your first name"
+                        autocomplete="given-name" required>
+                </label>
+
+                <label for="last-name">Last Name
+                    <input type="text" id="last-name" name="lastName" title="Please enter your last name"
+                        autocomplete="family-name" required>
+                </label>
+
+                <label for="org-title">Organizational Title
+                    <input type="text" id="org-title" name="orgTitle"
+                        title="Title must be at least 7 characters, letters, hyphens, and spaces only"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label for="email">Email Address
+                    <input type="email" id="email" name="email" title="Please enter your email address"
+                        autocomplete="email" placeholder="example@email.com" required>
+                </label>
+
+                <label for="mobile-phone">Mobile Phone
+                    <input type="tel" id="mobile-phone" name="mobilePhone" title="Please enter your mobile phone number"
+                        autocomplete="tel" required>
+                </label>
+
+                <label for="business-name">Business/Organization Name
+                    <input type="text" id="business-name" name="businessName"
+                        title="Please enter your business or organization name" autocomplete="organization" required>
+                </label>
+
+                <label for="business-description">Business/Organization Description
+                    <textarea id="business-description" name="businessDescription"
+                        title="Briefly describe your business or organization"></textarea>
+                </label>
+
+                <label for="np-level">
+                    <input type="radio" id="np-level" name="membershipLevel" value="np">
+                    NP Membership
+                </label>
+                <label for="bronze-level">
+                    <input type="radio" id="bronze-level" name="membershipLevel" value="bronze">
+                    Bronze Membership
+                </label>
+                <label for="silver-level">
+                    <input type="radio" id="silver-level" name="membershipLevel" value="silver">
+                    Silver Membership
+                </label>
+                <label for="gold-level">
+                    <input type="radio" id="gold-level" name="membershipLevel" value="gold">
+                    Gold Membership
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Apply for Membership</button>
+            </form>
+        </section>
+
+        <section class="membership-levels">
+            <h2>Membership Levels</h2>
+
+            <div class="level-card">
+                <h3>NP Membership</h3>
+                <a href="#" class="modal-trigger" data-modal="np-modal">Learn More</a>
+            </div>
+
+            <div class="level-card">
+                <h3>Bronze Membership</h3>
+                <a href="#" class="modal-trigger" data-modal="bronze-modal">Learn More</a>
+            </div>
+
+            <div class="level-card">
+                <h3>Silver Membership</h3>
+                <a href="#" class="modal-trigger" data-modal="silver-modal">Learn More</a>
+            </div>
+
+            <div class="level-card">
+                <h3>Gold Membership</h3>
+                <a href="#" class="modal-trigger" data-modal="gold-modal">Learn More</a>
+            </div>
+        </section>
+
+        <dialog id="np-modal">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Listing in the chamber directory</li>
+                <li>Access to community networking events</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>Listing in the chamber directory</li>
+                <li>Access to community networking events</li>
+                <li>Discounted event tickets</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Quarterly business spotlight</li>
+                <li>Priority event registration</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Home page spotlight placement</li>
+                <li>Free booth at chamber-sponsored events</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p>San Lorenzo Chamber of Commerce</p>
+            <p>Av. Mariscal López 1234, San Lorenzo, Paraguay</p>
+            <p>Phone: +595 21 555-1234</p>
+            <p>Email: info@sanlorenzochamber.org</p>
+        </div>
+        <div class="footer-dev">
+            <p>Eduardo Baez</p>
+            <p>WDD 231</p>
+            <p>&copy; <span id="year"></span> San Lorenzo Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
