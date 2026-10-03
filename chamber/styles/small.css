@@ -426,6 +426,8 @@ h1 {
     padding: 1rem;
     margin-bottom: 1rem;
     text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease forwards;
 }
 
 .level-card h3 {
@@ -439,11 +441,6 @@ h1 {
 }
 
 /* MEMBERSHIP CARD ANIMATION */
-.level-card {
-    opacity: 0;
-    animation: fadeInUp 1.2s ease forwards;
-}
-
 .level-card:nth-of-type(1) {
     animation-delay: 0.2s;
 }
