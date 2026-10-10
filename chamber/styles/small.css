@@ -497,6 +497,94 @@ dialog button.modal-close {
     margin-top: 0.5rem;
 }
 
+/* DISCOVER */
+#discover-cards {
+    display: grid;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.card:nth-of-type(1) {
+    grid-area: card1;
+}
+
+.card:nth-of-type(2) {
+    grid-area: card2;
+}
+
+.card:nth-of-type(3) {
+    grid-area: card3;
+}
+
+.card:nth-of-type(4) {
+    grid-area: card4;
+}
+
+.card:nth-of-type(5) {
+    grid-area: card5;
+}
+
+.card:nth-of-type(6) {
+    grid-area: card6;
+}
+
+.card:nth-of-type(7) {
+    grid-area: card7;
+}
+
+.card:nth-of-type(8) {
+    grid-area: card8;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.card address {
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+.card button {
+    margin-top: auto;
+    background-color: var(--color-link);
+    color: var(--color-text);
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--color-primary);
