@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sabores del Paraguay</title>
+    <meta name="description"
+        content="Contact Sabores del Paraguay or suggest your family's traditional Paraguayan recipe to be featured on the site.">
+    <meta name="author" content="Eduardo Baez">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | Sabores del Paraguay">
+    <meta property="og:description"
+        content="Contact Sabores del Paraguay or suggest your family's traditional Paraguayan recipe to be featured on the site.">
+    <meta property="og:image" content="https://edbaez-dev.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://edbaez-dev.github.io/wdd231/final/contact.html">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/navigation.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Sabores del Paraguay logo" width="48" height="48">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <form action="thankyou.html" method="get">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reason">Reason</label>
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason</option>
+                <option value="Suggest a recipe">Suggest a recipe</option>
+                <option value="Contact the site">Contact the site</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a>
+    </footer>
+</body>
+
+</html>

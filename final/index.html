@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Paraguay | Traditional Paraguayan Recipes</title>
+    <meta name="description"
+        content="Discover traditional Paraguayan recipes with their region, preparation time, difficulty, and ingredients.">
+    <meta name="author" content="Eduardo Baez">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sabores del Paraguay | Traditional Paraguayan Recipes">
+    <meta property="og:description"
+        content="Discover traditional Paraguayan recipes with their region, preparation time, difficulty, and ingredients.">
+    <meta property="og:image" content="https://edbaez-dev.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://edbaez-dev.github.io/wdd231/final/index.html">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Sabores del Paraguay logo" width="48" height="48">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp"
+                alt="Bowl of vorí vorí, a traditional Paraguayan soup with corn and cheese dumplings" width="1200"
+                height="600">
+            <div class="hero-content">
+                <h1>Sabores del Paraguay</h1>
+                <a href="recipes.html">See recipes</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured recipes</h2>
+            <div id="featured-recipes"></div>
+        </section>
+
+        <section class="about">
+            <div class="about-text">
+                <h2>About</h2>
+                <p>Sabores del Paraguay is a collection of traditional Paraguayan recipes. Here you can discover dishes
+                    from across the country, check how long each one takes and how difficult it is, save your favorites,
+                    and suggest your family's recipe to be featured on the site.</p>
+            </div>
+            <img src="images/about.webp" alt="Family cooking a traditional Paraguayan meal" width="900" height="600"
+                loading="lazy">
+        </section>
+    </main>
+
+    <footer>
+        <a href="attributions.html">Attributions</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a>
+    </footer>
+</body>
+
+</html>

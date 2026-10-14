@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Sabores del Paraguay</title>
+    <meta name="description"
+        content="Browse our catalog of traditional Paraguayan recipes and find dishes by region, preparation time, and difficulty.">
+    <meta name="author" content="Eduardo Baez">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Recipes | Sabores del Paraguay">
+    <meta property="og:description"
+        content="Browse our catalog of traditional Paraguayan recipes and find dishes by region, preparation time, and difficulty.">
+    <meta property="og:image" content="https://edbaez-dev.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://edbaez-dev.github.io/wdd231/final/recipes.html">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/recipes.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Sabores del Paraguay logo" width="48" height="48">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Recipes</h1>
+        <button type="button" id="saved-toggle">Show saved recipes</button>
+        <section id="recipe-list"></section>
+
+        <dialog id="recipe-modal" aria-labelledby="modal-title">
+            <h2 id="modal-title"></h2>
+            <h3>Ingredients</h3>
+            <ul id="modal-ingredients"></ul>
+            <button type="button" id="modal-close">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">Project video</a>
+    </footer>
+</body>
+
+</html>

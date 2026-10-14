@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+
+    /* Navigation */
+    #menu-toggle {
+        display: none;
+    }
+
+    #primary-nav {
+        display: block;
+        flex-basis: auto;
+    }
+
+    #primary-nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* Recipe cards */
+    #recipe-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    #featured-recipes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Home page */
+    .hero img {
+        height: 400px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+}

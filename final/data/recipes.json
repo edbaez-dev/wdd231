@@ -1,0 +1,238 @@
+[
+    {
+        "id": 1,
+        "name": "Sopa Paraguaya",
+        "region": "Nationwide",
+        "prepTime": 60,
+        "difficulty": "Medium",
+        "ingredients": [
+            "Corn flour",
+            "Fresh cheese",
+            "Onion",
+            "Milk",
+            "Eggs",
+            "Oil",
+            "Salt"
+        ],
+        "image": "sopa-paraguaya.webp"
+    },
+    {
+        "id": 2,
+        "name": "Chipa Guazu",
+        "region": "Nationwide",
+        "prepTime": 60,
+        "difficulty": "Medium",
+        "ingredients": [
+            "Fresh corn",
+            "Fresh cheese",
+            "Onion",
+            "Milk",
+            "Eggs",
+            "Butter",
+            "Salt"
+        ],
+        "image": "chipa-guazu.webp"
+    },
+    {
+        "id": 3,
+        "name": "Chipa",
+        "region": "Nationwide",
+        "prepTime": 90,
+        "difficulty": "Hard",
+        "ingredients": [
+            "Cassava starch",
+            "Fresh cheese",
+            "Eggs",
+            "Butter",
+            "Milk",
+            "Anise seeds",
+            "Salt"
+        ],
+        "image": "chipa.webp"
+    },
+    {
+        "id": 4,
+        "name": "Mbejú",
+        "region": "Nationwide",
+        "prepTime": 30,
+        "difficulty": "Easy",
+        "ingredients": [
+            "Cassava starch",
+            "Fresh cheese",
+            "Milk",
+            "Salt"
+        ],
+        "image": "mbeju.webp"
+    },
+    {
+        "id": 5,
+        "name": "Vori Vori",
+        "region": "Nationwide",
+        "prepTime": 75,
+        "difficulty": "Medium",
+        "ingredients": [
+            "Chicken",
+            "Corn flour",
+            "Fresh cheese",
+            "Onion",
+            "Bell pepper",
+            "Tomato",
+            "Salt"
+        ],
+        "image": "vori-vori.webp"
+    },
+    {
+        "id": 6,
+        "name": "So'o Yosopy",
+        "region": "Nationwide",
+        "prepTime": 45,
+        "difficulty": "Easy",
+        "ingredients": [
+            "Ground beef",
+            "Rice",
+            "Onion",
+            "Tomato",
+            "Bell pepper",
+            "Salt"
+        ],
+        "image": "soo-yosopy.webp"
+    },
+    {
+        "id": 7,
+        "name": "Mbaipy So'o",
+        "region": "Nationwide",
+        "prepTime": 60,
+        "difficulty": "Medium",
+        "ingredients": [
+            "Corn flour",
+            "Beef",
+            "Fresh cheese",
+            "Onion",
+            "Salt"
+        ],
+        "image": "mbaipy-soo.webp"
+    },
+    {
+        "id": 8,
+        "name": "Mandi'o Chyryry",
+        "region": "Nationwide",
+        "prepTime": 30,
+        "difficulty": "Easy",
+        "ingredients": [
+            "Cassava",
+            "Eggs",
+            "Fresh cheese",
+            "Oil",
+            "Salt"
+        ],
+        "image": "mandio-chyryry.webp"
+    },
+    {
+        "id": 9,
+        "name": "Payagua Mascada",
+        "region": "Nationwide",
+        "prepTime": 40,
+        "difficulty": "Easy",
+        "ingredients": [
+            "Cassava",
+            "Ground beef",
+            "Onion",
+            "Oil",
+            "Salt"
+        ],
+        "image": "payagua-mascada.webp"
+    },
+    {
+        "id": 10,
+        "name": "Mazamorra",
+        "region": "Nationwide",
+        "prepTime": 90,
+        "difficulty": "Easy",
+        "ingredients": [
+            "White corn",
+            "Milk",
+            "Sugar",
+            "Cinnamon"
+        ],
+        "image": "mazamorra.webp"
+    },
+    {
+        "id": 11,
+        "name": "Kivevé",
+        "region": "Nationwide",
+        "prepTime": 60,
+        "difficulty": "Medium",
+        "ingredients": [
+            "Pumpkin",
+            "Corn flour",
+            "Fresh cheese",
+            "Milk",
+            "Eggs",
+            "Salt"
+        ],
+        "image": "kiveve.webp"
+    },
+    {
+        "id": 12,
+        "name": "Chipa So'o",
+        "region": "Nationwide",
+        "prepTime": 120,
+        "difficulty": "Hard",
+        "ingredients": [
+            "Cassava starch",
+            "Corn flour",
+            "Ground beef",
+            "Eggs",
+            "Onion",
+            "Milk",
+            "Salt"
+        ],
+        "image": "chipa-soo.webp"
+    },
+    {
+        "id": 13,
+        "name": "Pastel Mandi'o",
+        "region": "Nationwide",
+        "prepTime": 60,
+        "difficulty": "Medium",
+        "ingredients": [
+            "Cassava",
+            "Ground beef",
+            "Onion",
+            "Eggs",
+            "Oil",
+            "Salt"
+        ],
+        "image": "pastel-mandio.webp"
+    },
+    {
+        "id": 14,
+        "name": "Tereré",
+        "region": "Nationwide",
+        "prepTime": 5,
+        "difficulty": "Easy",
+        "ingredients": [
+            "Yerba mate",
+            "Cold water",
+            "Ice",
+            "Medicinal herbs"
+        ],
+        "image": "terere.webp"
+    },
+    {
+        "id": 15,
+        "name": "Locro",
+        "region": "Nationwide",
+        "prepTime": 120,
+        "difficulty": "Hard",
+        "ingredients": [
+            "White corn",
+            "Beef",
+            "Pumpkin",
+            "Onion",
+            "Bell pepper",
+            "Salt"
+        ],
+        "image": "locro.webp"
+    }
+]
